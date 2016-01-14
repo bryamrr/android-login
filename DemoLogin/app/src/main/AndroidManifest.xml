@@ -28,6 +28,8 @@
 
         <activity android:name=".WelcomeActivity">
         </activity>
+        <activity android:name=".CreateAccountActivity">
+        </activity>
     </application>
 
 </manifest>

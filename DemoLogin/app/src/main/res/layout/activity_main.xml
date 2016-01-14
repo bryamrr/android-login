@@ -43,4 +43,14 @@
         android:layout_alignStart="@+id/passwordEditText"
         android:layout_alignRight="@+id/passwordEditText"
         android:layout_alignEnd="@+id/passwordEditText"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No tienes cuenta?"
+        android:id="@+id/createAccountButton"
+        android:layout_below="@+id/signInButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp"
+        android:textSize="11sp"/>
 </RelativeLayout>

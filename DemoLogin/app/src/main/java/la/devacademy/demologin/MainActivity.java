@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     private Button mSignInButton;
     private EditText mUsername;
     private EditText mPassword;
+    private Button mCreateAccount;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,11 +33,20 @@ public class MainActivity extends AppCompatActivity {
         mSignInButton = (Button) findViewById(R.id.signInButton);
         mUsername = (EditText) findViewById(R.id.usernameEditText);
         mPassword = (EditText) findViewById(R.id.passwordEditText);
+        mCreateAccount = (Button) findViewById(R.id.createAccountButton);
 
         mSignInButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 signIn();
+            }
+        });
+
+        mCreateAccount.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, CreateAccountActivity.class);
+                startActivity(intent);
             }
         });
     }
