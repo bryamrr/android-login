@@ -1,2 +1,3 @@
-# android-login
-Login hecho en Android, usando Parse
+# Android login
+
+Android login example using Parse
